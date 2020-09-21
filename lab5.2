@@ -1,1 +1,13 @@
+int main()
 
+{
+	int x1, x2, y1, y2, z1, z2, sum;
+	float dist1, dist2;
+	scanf_s("%d %d %d %d %d %d", &x1, &x2, &y1, &y2, &z1,&z2);
+	dist1 = sqrt(pow((x2 - x1),2) + pow((z2 - z1),2));
+	dist2 = sqrt(pow((y2 - y1), 2) + pow((z2 - z1), 2));
+	sum = dist1 + dist2;
+	printf("%.2f %.2f %d", dist1, dist2, sum);
+
+	return 0;
+}
