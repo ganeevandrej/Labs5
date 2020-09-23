@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+	float x1, x2, y1, y2, P, S, a, b;
+	scanf_s("%f %f %f %f", &x1, &x2, &y1, &y2);
+	a = abs(x1 - x2);
+	b = abs(y1 - y2);
+	P = (a + b) * 2;
+	S = a * b;
+	printf("%.0f\n", P);
+	printf("%.0f", S);
+	return 0;
+}
